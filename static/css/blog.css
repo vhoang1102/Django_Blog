@@ -1,0 +1,76 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.flex-center {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+body {
+	height: 100vh;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #000000;
+	background-image: linear-gradient(147deg, #000000 0%, #434343 74%);
+}
+
+.noselect {
+  -webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+		-webkit-tap-highlight-color: transparent;
+}
+
+button {
+	width: 150px;
+	height: 50px;
+	cursor: pointer;
+	border: none;
+	border-radius: 25px;
+	background-color: #50d8d7;
+	background-image: linear-gradient(316deg, #50d8d7 0%, #923993 74%);
+	transition: 500ms;
+}
+
+button::after {
+	width: 143px;
+	height: 43px;
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	content: 'Gradient';
+	font-size: 20px;
+	color: #eee;
+	border-radius: 25px;
+	background-color: #222;
+	transition: 500ms;
+}
+
+button:hover::after {
+	font-size: 25px;
+	background-color: transparent;
+}
+
+button:hover {
+	transform: scale(0.9);
+}
+
+button:focus {
+	outline: none;
+}
+
+.my-font {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
